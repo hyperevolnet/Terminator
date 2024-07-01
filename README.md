@@ -2,7 +2,7 @@
 ![PyTorch >=1.11](https://img.shields.io/badge/PyTorch->=1.1-yellow.svg)
 
 
-# Terminator (unfinished & rechecking...)
+# Terminator
  
 HyperZ⋅Z⋅W Operator Connects Slow-Fast Networks for Full Context Interaction (https://arxiv.org/pdf/2401.17948.pdf)
 
