@@ -151,8 +151,8 @@ class Terminator_image(TerminatorBase):
         out, ghk_b_4 = self.blocks[4](out + self.fast_bias[3].cuda(), x_pre=out_pre, x_pre_pre=out_pre_pre)
 
         if train_mode:                
-            # self.slow_neural_loss += cal_slow_loss([ghk_b_0, ghk_b_1, ghk_b_2, ghk_b_3, ghk_b_4], self.factors)
-            self.slow_neural_loss = cal_slow_loss_channel_sum([ghk_b_0, ghk_b_1, ghk_b_2, ghk_b_3, ghk_b_4])
+            self.slow_neural_loss += cal_slow_loss([ghk_b_0, ghk_b_1, ghk_b_2, ghk_b_3, ghk_b_4], self.factors)
+            # self.slow_neural_loss = cal_slow_loss_channel_sum([ghk_b_0, ghk_b_1, ghk_b_2, ghk_b_3, ghk_b_4])
 
         out = torch.nn.functional.adaptive_avg_pool2d(
             out,
