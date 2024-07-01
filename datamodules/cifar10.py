@@ -27,7 +27,7 @@ class CIFAR10DataModule(pl.LightningDataModule):
         self.pin_memory = pin_memory
 
         # Determine data_type
-        if data_type == "default":
+        if data_type == "image":
             self.data_type = "image"
             self.data_dim = 2
         elif data_type == "sequence":
