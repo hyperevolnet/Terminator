@@ -54,12 +54,12 @@ conda env create -f environment.yml
 
 #### Training commands
 ```shell
-python main.py dataset.name="CIFAR100" optimizer.name="Kar3" optimizer.lr=0.00120925 optimizer.l2_reg=0.00004 optimizer.betas="[0.75, 0.99]"
+python main.py dataset.name="CIFAR10" optimizer.name="Kar3" optimizer.lr=0.001215 optimizer.l2_reg=0.00005 optimizer.betas="[0.5, 0.95]"
 ```
 
 #### Testing commands
 ```shell
-python main.py dataset.name="CIFAR100" train.do=False pretrained.load=True pretrained.filename='**'
+python main.py dataset.name="CIFAR10" train.do=False pretrained.load=True pretrained.filename='**'
 ```
 
 If you want distrubuted training, please add ```train.distributed=True, num_nodes=1, avail_gpus=4```.
