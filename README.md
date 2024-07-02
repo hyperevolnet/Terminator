@@ -66,7 +66,7 @@ If you want distrubuted training, please add ```train.distributed=True, num_node
 
 <img src="./assets/acc_cifar10.png" width="350"> 
 
-The Terminator architecture can complete the fitting stage when only trained with 20 epochs, followed by the model compression stage.
+The Terminator architecture can complete the fitting stage when only trained with `20 epochs`, followed by the model compression stage.
 
 
 ## Citation
