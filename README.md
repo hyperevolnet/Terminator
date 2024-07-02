@@ -64,6 +64,8 @@ python main.py dataset.name="CIFAR10" train.do=False pretrained.load=True pretra
 
 If you want distrubuted training, please add ```train.distributed=True, num_nodes=1, avail_gpus=4```.
 
+<img src="./assets/acc_cifar10.pdf" width="350"> 
+
 
 ## Citation
 If you use this codebase, or otherwise find our work valuable, please cite our paper:
