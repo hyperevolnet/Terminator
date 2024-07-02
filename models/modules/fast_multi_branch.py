@@ -132,7 +132,7 @@ class FastMultiBranchLayer(torch.nn.Module):
         # HyperZZW_G - 1
         global_ctx_hk = x.mul(global_hk)
         
-        # mlp
+        # rgu
         slow_mlp = self.construct_fast_kernel_rgu_slow(global_ctx_hk)
         fast_mlp = self.construct_fast_kernel_rgu(x)
         
@@ -151,7 +151,7 @@ class FastMultiBranchLayer(torch.nn.Module):
         # global branches HyperZZW_G - 2
         out = torch.matmul(global_ctx_hk, fast)
         out_x = torch.matmul(global_ctx_hk, mixer_x)
-        out_eca = torch.matmul(global_ctx_hk, x_hci)
+        out_hci = torch.matmul(global_ctx_hk, x_hci)
         
         # si-glu
         out_glu = self.nonlinear(out) * out
@@ -176,7 +176,7 @@ class FastMultiBranchLayer(torch.nn.Module):
             scale = x.shape[1] // x_pre.shape[1]
             x_pre_1 = x_pre.repeat(1, scale, 1, 1)
             
-            out_concat = torch.cat([out, local_feat_2, x_pre_1, fast, out_x, local_feat_1, out_glu, local_feat_3, out_eca, local_feat_4, x_hyper], 1)
+            out_concat = torch.cat([out, local_feat_2, x_pre_1, fast, out_x, local_feat_1, out_glu, local_feat_3, out_hci, local_feat_4, x_hyper], 1)
             
         elif x_pre_pre is not None:
             scale = x.shape[1] // x_pre.shape[1]
@@ -185,10 +185,10 @@ class FastMultiBranchLayer(torch.nn.Module):
             scale = x.shape[1] // x_pre_pre.shape[1]
             x_pre_pre_1 = x_pre_pre.repeat(1, scale, 1, 1)
             
-            out_concat = torch.cat([out, local_feat_2, x_pre_1, fast, out_x, local_feat_1, out_glu, local_feat_3, out_eca, local_feat_4, x_pre_pre_1, x_hyper], 1)
+            out_concat = torch.cat([out, local_feat_2, x_pre_1, fast, out_x, local_feat_1, out_glu, local_feat_3, out_hci, local_feat_4, x_pre_pre_1, x_hyper], 1)
             
         else:
-            out_concat = torch.cat([out, local_feat_2, fast, out_x, local_feat_1, out_glu, local_feat_3, out_eca, local_feat_4, x_hyper], 1)
+            out_concat = torch.cat([out, local_feat_2, fast, out_x, local_feat_1, out_glu, local_feat_3, out_hci, local_feat_4, x_hyper], 1)
         
         out_o = self.bottleneck_layer(out_concat)
         
