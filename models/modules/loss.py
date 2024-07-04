@@ -67,7 +67,7 @@ def cal_slow_loss_channel_sum(ghk_bs):
 
 
 class LabelSmoothingCrossEntropy(nn.Module):
-    def __init__(self, eps=0.1, reduction='mean'):
+    def __init__(self, eps=0.09, reduction='mean'):
         super(LabelSmoothingCrossEntropy, self).__init__()
         self.eps = eps
         self.reduction = reduction
