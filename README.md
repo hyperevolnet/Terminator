@@ -27,6 +27,8 @@ pixel-level 1D and 2D image classification benchmarks demonstrate the superior p
 
 ## Updates
 
+[05-07-2024] You will see the potential of this architecture on current popular LLM in the near future. If you can donate computing resources, you can contact me.
+
 [01-07-2024] I open source the code on 2D image tasks. The new code version is still under further testing, and I will also release the code on the 1D image task later.
 
 
