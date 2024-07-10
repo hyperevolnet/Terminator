@@ -59,7 +59,7 @@ class RGU(torch.nn.Module):
         self.nonlinear = NonlinearType()
         
         # Bias
-        self.bias_p = torch.nn.Parameter(
+        self.fast_bias_p = torch.nn.Parameter(
             torch.zeros(1, 1, bias_size, bias_size), requires_grad=True
         )
         
@@ -67,7 +67,7 @@ class RGU(torch.nn.Module):
         out_k = self.fast_linear_k(x)
         out_v = self.fast_linear_v(x)
         
-        out_q = self.nonlinear(self.ins_std(out_k * self.fast_linear_q(out_v))) + self.bias_p.repeat(x.shape[0], self.hidden_channels, 1, 1)
+        out_q = self.nonlinear(self.ins_std(out_k * self.fast_linear_q(out_v))) + self.fast_bias_p.repeat(x.shape[0], self.hidden_channels, 1, 1)
         
         out_y = self.fast_linear_y(out_q)
         
