@@ -47,7 +47,7 @@ pixel-level 1D and 2D image classification benchmarks demonstrate the superior p
 
 ### Installation
 
-We provide an environment file ``environment.yml`` containing the required dependencies. Clone the repo and run the following command in the root of this directory:
+I provide an environment file ``environment.yml`` containing the required dependencies. Clone the repo and run the following command in the root of this directory:
 ```
 conda env create -f environment.yml
 ```
@@ -72,7 +72,7 @@ The Terminator architecture can complete the fitting stage when only trained wit
 
 
 ## Citation
-If you use this codebase, or otherwise find our work valuable, please cite our paper:
+If you use this codebase, or otherwise find my work valuable, please cite our paper:
 ```
 @article{zhang2024hyperz,
   title={HyperZ⋅Z⋅W Operator Connects Slow-Fast Networks for Full Context Interaction},
@@ -84,7 +84,7 @@ If you use this codebase, or otherwise find our work valuable, please cite our p
 
 
 ## Acknowledgement
-Thank [Alex Yanko](https://x.com/LeopolisDream) for posting this work on X ([twitter](https://x.com/LeopolisDream/status/1804627325583327358)), which attracts more attention. Harvie Zhang independently conducted this project, which commenced in October 2022. Our code is learned from [ccnn](https://github.com/david-knigge/ccnn). We hope our `Terminator` could promote the exploration of novel network architecture.
+Thank [Alex Yanko](https://x.com/LeopolisDream) for posting this work on X ([twitter](https://x.com/LeopolisDream/status/1804627325583327358)), which attracts more attention. Harvie Zhang independently conducted this project, which commenced in October 2022. Our code is learned from [ccnn](https://github.com/david-knigge/ccnn). I hope my `Terminator` could promote the exploration of novel network architecture.
 
 
 ## Dicussion
