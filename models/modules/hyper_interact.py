@@ -75,8 +75,6 @@ class HyperInteract(nn.Module):
         self.slow_net_gc_hi = SlowNetType_GC(in_channels=1)
         
         # slow net for spatial
-        kernel_cfg_s.no_hidden = 64
-        kernel_cfg_s.no_layers = 2
         SlowNetType_GS = partial(
             SlowNet_G,
             data_dim=2,
