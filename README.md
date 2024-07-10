@@ -43,7 +43,7 @@ pixel-level 1D and 2D image classification benchmarks demonstrate the superior p
 - [x] `Excellent Properties`: faster training convergence, zero-mean features, fewer model parameters.
 - [x] New optimizers `Kar2` & `Kar3` (no weight decay) are more suitable for slow-fast architectue.
 - [x] The width of NN is far greater than its depth (`5000 vs. 5`).
-- [x] More model parameters, less training epochs.
+- [x] `More` model parameters, `less` training epochs.
 
 ### Installation
 
