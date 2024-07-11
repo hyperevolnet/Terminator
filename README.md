@@ -72,7 +72,7 @@ The Terminator architecture can complete the fitting stage when only trained wit
 
 
 ## Citation
-If you use this codebase, or otherwise find my work valuable, please cite our paper:
+If you use this codebase, or otherwise find my work valuable, please cite my paper:
 ```
 @article{zhang2024hyperz,
   title={HyperZ⋅Z⋅W Operator Connects Slow-Fast Networks for Full Context Interaction},
