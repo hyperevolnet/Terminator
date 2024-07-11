@@ -26,7 +26,7 @@ class SFNEBlock(torch.nn.Module):
             bottleneck_factor=bottleneck_factor
         )
         
-        self.norm = G_IBS(int(in_channels*bottleneck_factor), group_num=12)
+        self.gibs = G_IBS(int(in_channels*bottleneck_factor), group_num=12)
         self.nonlinear = NonlinearType()
         self.dp = DropoutType(dropout)
         
@@ -35,7 +35,7 @@ class SFNEBlock(torch.nn.Module):
     def forward(self, x, x_pre=None, x_pre_pre=None):
         
         out, global_hk = self.fast_multi_branch(x, x_pre, x_pre_pre)
-        out = self.nonlinear(self.norm(out))
+        out = self.nonlinear(self.gibs(out))
         out_ = self.dp(out + self.bias)
         
         return out_, global_hk
