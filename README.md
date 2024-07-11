@@ -27,9 +27,7 @@ pixel-level 1D and 2D image classification benchmarks demonstrate the superior p
 
 ## Updates
 
-[05-07-2024] You will see the potential of this architecture on current popular LLM in the near future. If you can donate computing resources, you can contact me.
-
-[01-07-2024] I open source the code on 2D image tasks. The new code version is still under further testing, and I will also release the code on the 1D image task later.
+[01-07-2024] I open source the code on 2D image tasks. The new code version is still under further testing.
 
 
 ### Overall Architecture
@@ -90,5 +88,3 @@ Thank [Alex Yanko](https://x.com/LeopolisDream) for posting this work on X ([twi
 ## Dicussion
 
 If you have any suggestion or question, you can contact me by harviezzw@gmail.com. Thanks for your attention!
-
-In addition, I have many ideas to further expand this work. If you are interested, you can reach out to me.
