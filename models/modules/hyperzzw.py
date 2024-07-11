@@ -9,7 +9,7 @@ def HyperZZW_G(global_hk, x):
     """
     global_ctx_hk = x.mul(global_hk)
         
-    global_feat = torch.matmul(global_hk, x)
+    global_feat = torch.matmul(global_ctx_hk, x)
         
     return global_feat
 
