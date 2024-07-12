@@ -71,16 +71,8 @@ If you want distrubuted training, please add ```train.distributed=True, num_node
 The Terminator architecture can complete the data fitting stage when only trained with `20 epochs`, followed by the model compression stage.
 
 
-## Citation
-If you use this codebase, or otherwise find my work valuable, please cite my paper:
-```
-@article{zhang2024hyperz,
-  title={HyperZ⋅Z⋅W Operator Connects Slow-Fast Networks for Full Context Interaction},
-  author={Zhang, Harvie},
-  journal={arXiv preprint arXiv:2401.17948},
-  year={2024}
-}
-```
+## LICENSE
+This project is only used for scientific research and cannot be used for business.
 
 
 ## Acknowledgement
