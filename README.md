@@ -27,7 +27,7 @@ pixel-level 1D and 2D image classification benchmarks demonstrate the superior p
 
 ## Updates
 
-[12-07-2024] You guys only download code and don't want to star, so future version will not be open source. Of course, this paper will not be submitted to peer review again. Fundamentally reshaping the LLM paradigm is only a small part of the future version.
+[12-07-2024] Fundamentally reshaping the LLM paradigm is only a small part of the future version.
 
 [01-07-2024] I open source the code on 2D image tasks. The new code version is still under further testing.
 
