@@ -89,4 +89,4 @@ Thank [Alex Yanko](https://x.com/LeopolisDream) for posting this work on X ([twi
 
 ## Dicussion
 
-If you have any suggestion or question, you can contact me by harviezzw@gmail.com. Thanks for your attention!
+If you have any suggestion or question, you can contact me by harviezzw@gmail.com.
