@@ -27,7 +27,7 @@ pixel-level 1D and 2D image classification benchmarks demonstrate the superior p
 
 ## Updates
 
-[19-07-2024] If you are improving Terminator, you can contact me to a free idea.
+[19-07-2024] If you are improving Terminator, you can contact me to get a free idea.
 
 [12-07-2024] Fundamentally reshaping the LLM paradigm is only a small part of the future version.
 
