@@ -137,20 +137,11 @@ class ClassificationWrapper(LightningWrapperBase):
         self.val_acc = torchmetrics.Accuracy()
         self.test_acc = torchmetrics.Accuracy()
         
-        # Binary problem?
-        self.multiclass = True
-        
         # Loss metric
-        if self.multiclass:
-            self.loss_metric = LabelSmoothingCrossEntropy()
-        else:
-            self.loss_metric = torch.nn.BCEWithLogitsLoss()
+        self.loss_metric = LabelSmoothingCrossEntropy()
         
         # Function to get predictions:
-        if self.multiclass:
-            self.get_predictions = self.multiclass_prediction
-        else:
-            self.get_predictions = self.binary_prediction
+        self.get_predictions = self.multiclass_prediction
             
         # Placeholders for logging of best train & validation values
         self.best_train_acc = 0.0
@@ -322,7 +313,3 @@ class ClassificationWrapper(LightningWrapperBase):
     @staticmethod
     def multiclass_prediction(logits):
         return torch.argmax(logits, 1)
-
-    @staticmethod
-    def binary_prediction(logits):
-        return (logits > 0.0).squeeze().long()
