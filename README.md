@@ -34,7 +34,7 @@ pixel-level 1D and 2D image classification benchmarks demonstrate the superior p
 [01-07-2024] I open source the code on 2D image tasks. The new code version is still under further testing.
 
 
-<img src="./assets/lra.png" width="350">
+<img src="./assets/lra.png" width="500">
 
 
 ### Overall Architecture
