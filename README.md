@@ -81,7 +81,7 @@ This project is only used for scientific research and cannot be used for busines
 
 
 ## Acknowledgement
-Thank [Alex Yanko](https://x.com/LeopolisDream) for posting this work on X ([twitter](https://x.com/LeopolisDream/status/1804627325583327358)), which attracts more attention. Without his post, I decided not to release the code. Harvie Zhang independently conducted this project, which commenced in October 2022. Our code is learned from [ccnn](https://github.com/david-knigge/ccnn). I hope my `Terminator` could promote the exploration of novel network architecture.
+Thank [Alex Yanko](https://x.com/LeopolisDream) for posting this work on X ([twitter](https://x.com/LeopolisDream/status/1804627325583327358)), which attracts more attention. Without his post, I decided not to release the code. Harvie Zhang independently conducted this project, which commenced in October 2022. I hope my `Terminator` could promote the exploration of novel network architecture.
 
 
 ## Dicussion
