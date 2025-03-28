@@ -159,9 +159,9 @@ class ClassificationWrapper(LightningWrapperBase):
         accuracy_calculator(predictions, labels)
         
         # For binary classification, the labels must be float
-        if not self.multiclass:
-            labels = labels.float()
-            logits = logits.view(-1)
+        # if not self.multiclass:
+        #     labels = labels.float()
+        #     logits = logits.view(-1)
         
         loss = self.loss_metric(logits, labels) + slow_neural_loss
         
