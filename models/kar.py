@@ -88,9 +88,12 @@ class Kar3(Optimizer):
         sign_avg_sq = torch.sign(exp_avg_sq)
         sign_avg_sq_2 = torch.sign(exp_avg_sq_2)
         
-        p.add_(sign_grad, alpha=-group['lr'])
-        p.add_(sign_avg_sq, alpha=-group['lr'])
-        p.add_(sign_avg_sq_2, alpha=-group['lr'])
+        # p.add_(sign_grad, alpha=-group['lr'])
+        # p.add_(sign_avg_sq, alpha=-group['lr'])
+        # p.add_(sign_avg_sq_2, alpha=-group['lr'])
+
+        update = sign_grad + sign_avg_sq + sign_avg_sq_2
+        p.add_(update, alpha = -group['lr'])
         
         exp_avg_sq.mul_(beta1).add_(grad, alpha=1 - beta1)
         exp_avg_sq_2.mul_(beta2).add_(grad, alpha=1 - beta2)
@@ -153,8 +156,11 @@ class Kar2(Optimizer):
         sign_grad = torch.sign(grad)
         sign_avg_sq = torch.sign(exp_avg_sq)
         
-        p.add_(sign_grad, alpha=-group['lr'])
-        p.add_(sign_avg_sq, alpha=-group['lr'])
+        # p.add_(sign_grad, alpha=-group['lr'])
+        # p.add_(sign_avg_sq, alpha=-group['lr'])
+
+        update = sign_grad + sign_avg_sq
+        p.add_(update, alpha = -group['lr'])
         
         exp_avg_sq.mul_(beta).add_(grad, alpha=1 - beta)
 
