@@ -1,6 +1,8 @@
 # Terminator
 
-The old code was downloaded more than 1,000 times (41 stars).
+Harvie Zhang **independently** completed this project, such as idea, proposal, experiment, writing.
+
+The old code was downloaded more than 1,000 times (41 stars). 
 
 The new codebase is coming soon.
 
