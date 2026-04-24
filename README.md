@@ -1,8 +1,10 @@
 # Terminator
 
-Harvie Zhang **independently** completed this project, such as idea, proposal, experiment, writing.
+Thanks for your interests in this work. I close the open-source code for several reasons.
 
 The old code was downloaded more than 1,000 times (41 stars). 
+
+Harvie Zhang **independently** completed this project, such as idea, proposal, experiment, writing.
 
 
 <img width="1434" height="772" alt="image" src="https://github.com/user-attachments/assets/cb6ffcbe-8726-4eb3-ad08-3e3b6f180bc8" />
