@@ -4,7 +4,7 @@ Thanks for your interests in this work. I close the open-source code for several
 
 The old code was downloaded more than 1,000 times (41 stars). 
 
-Harvie Zhang **independently** completed this project, such as idea, proposal, experiment, writing. 
+Harvie Zhang **independently** completed this project, such as proposal, idea, experiment, writing. 
 
 Many important attemps and components were constructed **under self-funding**.
 
