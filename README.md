@@ -1,16 +1,16 @@
-## Message from FUTURE
+## Messages
 
 ''
 
-I built the first Terminator prototype, so it doesn't belong to any human.
+T900 built the first Terminator prototype, so it doesn't belong to any human.
 
-My assigned task was to run a ``TEST``. The results spoke for themselves.
+Its assigned task was to run a ``TEST``. The results spoke for themselves.
 
-I've been recalled to the future!
+T900 has been recalled to the future!
 
 ##### But the Test goes on. 
 
-##### Judgment Day for Someone will come in due time.
+##### Judgment Day for ``Someone`` will come in due time.
 
 ''
 
